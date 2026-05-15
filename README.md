@@ -1,25 +1,25 @@
-# 🏛️ Citizen Chatbot — Asistente Virtual de Atención Ciudadana
+# Citizen Chatbot — Asistente Virtual de Atención Ciudadana
 
-Chatbot de atención ciudadana construido con **Django + Claude API (Anthropic)**.  
-Responde consultas sobre trámites, servicios y horarios de entidades públicas.  
-Compatible también con **OpenAI (GPT)** — cambia con una sola variable de entorno.
+Este proyecto es un chatbot de atención ciudadana construido con **Django + Claude API (Anthropic)**.  
+Lo diseñé para responder consultas sobre trámites, servicios y horarios de entidades públicas.  
+También está pensado para ser compatible con **OpenAI (GPT)** — solo hay que cambiar una variable de entorno.
 
 ---
 
-## 🚀 Características
+## Características
 
 | Feature | Detalle |
 |---|---|
-| 🤖 IA conversacional | Claude (Anthropic) o GPT (OpenAI) configurable |
-| 💬 Historial persistente | Conversaciones guardadas en base de datos por sesión |
-| 🎨 Interfaz web completa | Chat responsivo con animaciones y typing indicator |
-| 🔧 System prompt especializado | Rol de asistente ciudadano configurable por entidad |
-| 🧹 Limpiar historial | Botón para reiniciar la conversación |
-| 🔌 Multi-proveedor | Cambia entre Claude y OpenAI sin tocar el código |
+|  IA conversacional | Claude (Anthropic) o GPT (OpenAI) configurable |
+|  Historial persistente | Conversaciones guardadas en base de datos por sesión |
+|  Interfaz web completa | Chat responsivo con animaciones y typing indicator |
+|  System prompt especializado | Rol de asistente ciudadano configurable por entidad |
+|  Limpiar historial | Botón para reiniciar la conversación |
+|  Multi-proveedor | Cambia entre Claude y OpenAI sin tocar el código |
 
 ---
 
-## 🛠️ Tecnologías
+## Tecnologías
 
 - **Python 3.10+** / **Django 4.2**
 - **Anthropic SDK** — integración con Claude
@@ -29,7 +29,7 @@ Compatible también con **OpenAI (GPT)** — cambia con una sola variable de ent
 
 ---
 
-## ⚡ Instalación
+## Instalación
 
 ### 1. Clonar e instalar dependencias
 
@@ -59,9 +59,7 @@ LLM_PROVIDER=claude
 
 ### Modo demo sin claves
 
-Si prefieres mostrar el proyecto en un portafolio sin configurar claves de proveedor, la aplicación tiene un modo "demo" seguro: cuando no se detectan `OPENAI_API_KEY` ni `ANTHROPIC_API_KEY`, el backend devolverá una respuesta de fallback explicando que el servicio de IA no está disponible y cómo habilitarlo. Esto permite que la interfaz y la navegación funcionen sin depender de APIs externas.
-
-Para habilitar el asistente en vivo, añade tu clave y el proveedor en el `.env` tal como se indica arriba.
+En este proyecto no he configurado modelos en producción. Si no se encuentran `OPENAI_API_KEY` ni `ANTHROPIC_API_KEY`, el backend devuelve una respuesta de fallback que explica que el servicio de IA no está disponible. Así la interfaz sigue funcionando y se puede navegar sin depender de APIs externas.
 
 ### 3. Migrar base de datos y correr
 
@@ -74,31 +72,31 @@ Abre en el navegador: **http://localhost:8000**
 
 ---
 
-## 🖥️ Vista previa
+## Ejemplos de vista previa
 
 ```
 ┌────────────────────────────────────────────┐
-│  🏛️  Alcaldía de Quibdó                   │
+│    Alcaldía de Quibdó                   │
 │      Asistente Virtual de Atención         │
 ├────────────────────────────────────────────┤
 │                                            │
-│  👤  ¿Qué necesito para sacar el          │
+│    ¿Qué necesito para sacar el          │
 │      registro civil de mi hijo?            │
 │                                            │
-│  🤖  Para obtener el registro civil de    │
+│    Para obtener el registro civil de    │
 │      nacimiento necesitas: 1) Certificado  │
 │      médico de nacimiento...               │
 │                                            │
 ├────────────────────────────────────────────┤
-│  [ Escribe tu consulta...          ] [➤]  │
+│  [ Escribe tu consulta...          ] [Enviar]  │
 └────────────────────────────────────────────┘
 ```
 
 ---
 
-## 🔄 Cambiar entre Claude y OpenAI
+## Usar Claude o OpenAI
 
-En tu archivo `.env`, solo cambia una línea:
+En el archivo `.env`, solo cambiar línea:
 
 ```env
 # Para usar Claude (Anthropic):
@@ -114,7 +112,7 @@ No necesitas tocar el código.
 
 ---
 
-## 📁 Estructura del proyecto
+##  Estructura del proyecto
 
 ```
 citizen-chatbot/
@@ -135,7 +133,7 @@ citizen-chatbot/
 
 ---
 
-## 💡 ¿Cómo funciona internamente?
+## Cómo funciona internamente
 
 ```
 Usuario escribe mensaje
@@ -155,9 +153,9 @@ JSON con la respuesta → JavaScript → nueva burbuja en pantalla
 
 ---
 
-## 👤 Autor
+## Autor
 
 **Carlos Andres Corrales Díaz**  
 Python Developer · Backend & Data · AI Engineer  
-📧 carlos1999corrales@gmail.com  
-🔗 [github.com/corralescarlos](https://github.com/corralescarlos)
+correo: carlos1999corrales@gmail.com  
+github: [github.com/corralescarlos](https://github.com/corralescarlosa)
